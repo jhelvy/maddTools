@@ -1,0 +1,11 @@
+citHeader("To cite conjointTools in publications use:")
+
+citEntry(
+  entry    = "Manual",
+  title    = "conjointTools: Tools For Designing Conjoint Survey Experiments",
+  author   = c("John Paul Helveston", "Martin Lukac", "Alberto Stefanelli"),
+  year     = "2021",
+  note     = "R package version 0.0.4",
+  url      = "https://jhelvy.github.io/conjointTools/",
+  textVersion = "John Paul Helveston, Martin Lukac, Alberto Stefanelli (2021). conjointTools: Tools For Designing Conjoint Survey Experiments."
+)

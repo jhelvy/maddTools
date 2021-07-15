@@ -1,0 +1,43 @@
+home:
+  title: Tools For Designing Conjoint Survey Experiments.
+  description:
+
+template:
+ params:
+    bootswatch: cosmo
+twitter:
+    creator: "@JohnHelveston"
+    card: summary_large_image
+
+navbar:
+  title: "conjointTools"
+  left:
+    - icon: fa-home fa-lg
+      href: index.html
+    - text: "Reference"
+      href: reference/index.html
+    - text: "Changelog"
+      href: news/index.html
+  right:
+   - icon: fa-github
+     href: https://github.com/jhelvy/conjointTools
+
+reference:
+- title: "Survey Design"
+  desc: "Functions for creating different experiment designs and coded surveys."
+  contents:
+  - makeDoe
+  - recodeDesign
+  - makeSurvey
+- title: "Simulate Choices"
+  desc: "Functions for simulating choices for a given survey design."
+  contents:
+  - simulateChoices
+  - randN
+  - randLN
+- title: "Power Analysis"
+  desc: "Functions for conducting a power analysis for a given survey design."
+  contents:
+  - estimateModels
+  - getModelResults
+  - makeSurvey
