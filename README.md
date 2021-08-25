@@ -32,6 +32,8 @@ This package contains the following functions:
     every column in a data frame of numeric columns.
 -   `ggtornado()`: Creates a “tornado” plot using the
     [{ggplot2}](https://ggplot2.tidyverse.org/) package.
+-   `mvrnorm()`: Simulate draws from a multivariate normal distribution
+    (from the {MASS} package).
 -   `rep_df()`: Repeats a data frame `n` times.
 
 To view more details of any of the functions, run `?functionName()` in

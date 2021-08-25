@@ -2,6 +2,7 @@
 
 export(ci)
 export(ggtornado)
+export(mvrnorm)
 export(rep_df)
 importFrom(ggplot2,aes)
 importFrom(ggplot2,geom_col)
