@@ -7,8 +7,8 @@
 vignettes
 ^README\.Rmd$
 ^LICENSE\.md$
-^conjointTools\.Rproj$
+^maddTools\.Rproj$
 ^doc$
 ^Meta$
-^next_release\.md$
 ^build\.R$
+^foo\.R$

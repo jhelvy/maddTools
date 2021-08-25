@@ -1,28 +1,70 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# maddTools
+# {maddTools}
 
-This package contains tools for the GWU course EMSE 6035: Marketing
-Analytics for Design Decisions
+<!-- badges: start -->
+<!-- badges: end -->
+
+Miscellaneous functions for the GWU course [EMSE 6035: Marketing
+Analytics for Design Decisions](https://madd.seas.gwu.edu/)
 
 ## Installation
 
-You can install the package from Github using the **devtools** library:
+The package can be installed from GitHub:
 
 ``` r
-devtools::install_github("emse-madd-gwu/maddTools")
+# install.packages("remotes")
+remotes::install_github("emse-madd-gwu/maddTools")
 ```
 
-Load the library with:
+Load the package with:
 
 ``` r
 library(maddTools)
 ```
 
-## Version and License Information
+## Contents
 
--   Date First Written: *July 15, 2021*
--   Most Recent Update: July 15 2021
+This package contains the following functions:
+
+-   `ci()`: Get confidence intervals for a vector of numbers or for
+    every column in a data frame of numeric columns.
+-   `ggtornado()`: Creates a “tornado” plot using the
+    [{ggplot2}](https://ggplot2.tidyverse.org/) package.
+-   `rep_df()`: Repeats a data frame `n` times.
+
+To view more details of any of the functions, run `?functionName()` in
+R, replacing ‘functionName’ with the name of the function.
+
+## Author, Version, and License Information
+
+-   Author: *John Paul Helveston* <https://www.jhelvy.com/>
+-   Date First Written: *August, 25, 2021*
 -   License:
-    [MIT](https://github.com/jhelvy/maddTools/blob/master/LICENSE.md)
+    [MIT](https://github.com/emse-madd-gwu/maddTools/blob/master/LICENSE.md)
+
+## Citation Information
+
+If you use this package for in a publication, I would greatly appreciate
+it if you cited it - you can get the citation by typing
+`citation("maddTools")` into R:
+
+``` r
+citation("maddTools")
+#> 
+#> To cite maddTools in publications use:
+#> 
+#>   John Paul Helveston (2021). maddTools: Tools For EMSE 6035 -
+#>   Marketing Analytics for Design Decisions.
+#> 
+#> A BibTeX entry for LaTeX users is
+#> 
+#>   @Manual{,
+#>     title = {maddTools: Tools For EMSE 6035 - Marketing Analytics for Design Decisions},
+#>     author = {John Paul Helveston},
+#>     year = {2021},
+#>     note = {R package version 0.0.1},
+#>     url = {http://madd.seas.gwu.edu/maddTools/},
+#>   }
+```

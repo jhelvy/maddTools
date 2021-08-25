@@ -1,18 +1,26 @@
 Package: maddTools
-Title: Tools For EMSE 6035
+Title: Miscellaneous Functions For EMSE 6035
 Version: 0.0.1
 Maintainer: John Helveston <john.helveston@gmail.com>
-Authors@R: c(
+Authors@R:
     person(given   = "John",
            family  = "Helveston",
-           role    = c("cre", "aut", "cph"),
+           role    = c("aut", "cre", "cph"),
            email   = "john.helveston@gmail.com",
-           comment = c(ORCID = "0000-0002-2657-9191")))
-Description: An R package containing tools for the GWU course EMSE 6035: Marketing Analytics for Design Decisions.
+           comment = c(ORCID = "0000-0002-2657-9191"))
+Description: An R package of functions for the GWU course EMSE 6035: Marketing Analytics for Design Decisions.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.1
+Depends:
+    R (>= 3.5.0)
+Suggests:
+    tidyverse
 Imports:
-Remotes:
+    ggplot2,
+    rlang,
+    stats
+URL: https://github.com/emse-madd-gwu/maddTools
+BugReports: https://github.com/emse-madd-gwu/maddTools/issues

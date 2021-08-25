@@ -1,11 +1,11 @@
-citHeader("To cite conjointTools in publications use:")
+citHeader("To cite maddTools in publications use:")
 
 citEntry(
   entry    = "Manual",
-  title    = "conjointTools: Tools For Designing Conjoint Survey Experiments",
-  author   = c("John Paul Helveston", "Martin Lukac", "Alberto Stefanelli"),
+  title    = "maddTools: Tools For EMSE 6035 - Marketing Analytics for Design Decisions",
+  author   = "John Paul Helveston",
   year     = "2021",
-  note     = "R package version 0.0.4",
-  url      = "https://jhelvy.github.io/conjointTools/",
-  textVersion = "John Paul Helveston, Martin Lukac, Alberto Stefanelli (2021). conjointTools: Tools For Designing Conjoint Survey Experiments."
+  note     = "R package version 0.0.1",
+  url      = "http://madd.seas.gwu.edu/maddTools/",
+  textVersion = "John Paul Helveston (2021). maddTools: Tools For EMSE 6035 - Marketing Analytics for Design Decisions."
 )

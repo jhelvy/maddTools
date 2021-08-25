@@ -6,34 +6,58 @@ output: github_document
 
 ```{r, include = FALSE}
 knitr::opts_chunk$set(
-  collapse = TRUE,
-  warning = FALSE,
-  message = FALSE,
-  comment = "#>",
-  fig.path = "man/figures/README-",
+  collapse   = TRUE,
+  warning    = FALSE,
+  message    = FALSE,
+  comment    = "#>",
+  fig.path   = "man/figures/",
   fig.retina = 3
 )
 ```
 
-# maddTools
+# {maddTools}
 
-This package contains tools for the GWU course EMSE 6035: Marketing Analytics for Design Decisions
+<!-- badges: start -->
+
+<!-- badges: end -->
+
+Miscellaneous functions for the GWU course [EMSE 6035: Marketing Analytics for Design Decisions](https://madd.seas.gwu.edu/)
 
 ## Installation
 
-You can install the package from Github using the **devtools** library:
+The package can be installed from GitHub:
 
-```{r, eval=FALSE}
-devtools::install_github("emse-madd-gwu/maddTools")
+```r
+# install.packages("remotes")
+remotes::install_github("emse-madd-gwu/maddTools")
 ```
 
-Load the library with:
-```{r}
+Load the package with:
+
+```{r, eval=FALSE}
 library(maddTools)
 ```
 
-## Version and License Information
+## Contents
 
-- Date First Written: *July 15, 2021*
-- Most Recent Update: `r format(Sys.Date(), format="%B %d %Y")`
-- License: [MIT](https://github.com/jhelvy/maddTools/blob/master/LICENSE.md)
+This package contains the following functions:
+
+* `ci()`: Get confidence intervals for a vector of numbers or for every column in a data frame of numeric columns.
+* `ggtornado()`: Creates a "tornado" plot using the [{ggplot2}](https://ggplot2.tidyverse.org/) package.
+* `rep_df()`: Repeats a data frame `n` times.
+
+To view more details of any of the functions, run `?functionName()` in R, replacing 'functionName' with the name of the function.
+
+## Author, Version, and License Information
+
+- Author: *John Paul Helveston* https://www.jhelvy.com/
+- Date First Written: *August, 25, 2021*
+- License: [MIT](https://github.com/emse-madd-gwu/maddTools/blob/master/LICENSE.md)
+
+## Citation Information
+
+If you use this package for in a publication, I would greatly appreciate it if you cited it - you can get the citation by typing `citation("maddTools")` into R:
+
+```{r}
+citation("maddTools")
+```
