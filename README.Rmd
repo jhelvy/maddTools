@@ -45,6 +45,7 @@ This package contains the following functions:
 * `ci()`: Get confidence intervals for a vector of numbers or for every column in a data frame of numeric columns.
 * `ggtornado()`: Creates a "tornado" plot using the [{ggplot2}](https://ggplot2.tidyverse.org/) package.
 * `mvrnorm()`: Simulate draws from a multivariate normal distribution (from the {MASS} package).
+* `logitProbs()`: Computes logit fraction given a set of coefficients and alternatives.
 * `rep_df()`: Repeats a data frame `n` times.
 
 To view more details of any of the functions, run `?functionName()` in R, replacing 'functionName' with the name of the function.

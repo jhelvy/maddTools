@@ -20,6 +20,7 @@ Suggests:
     tidyverse
 Imports:
     ggplot2,
+    logitr (>= 0.3.0),
     MASS,
     rlang,
     stats
