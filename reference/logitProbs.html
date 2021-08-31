@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Function reference • maddTools</title>
+<title>Computes logit fraction given a set of coefficients and alternatives — logitProbs • maddTools</title>
 
 
 <!-- jquery -->
@@ -39,7 +39,10 @@
 
 
 
-<meta property="og:title" content="Function reference" />
+<meta property="og:title" content="Computes logit fraction given a set of coefficients and alternatives — logitProbs" />
+<meta property="og:description" content="Returns a data frame of the predicted probabilities (with a confidence)
+interval) for a set of coefficients (or coefficient draws) and a data frame
+of alternatives." />
 
 
 
@@ -58,7 +61,7 @@
   </head>
 
   <body data-spy="scroll" data-target="#toc">
-    <div class="container template-reference-index">
+    <div class="container template-reference-topic">
       <header>
       <div class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container">
@@ -108,66 +111,54 @@
       </header>
 
 <div class="row">
-  <div class="contents col-md-9">
+  <div class="col-md-9 contents">
     <div class="page-header">
-      <h1>Reference</h1>
+    <h1>Computes logit fraction given a set of coefficients and alternatives</h1>
+    <small class="dont-index">Source: <a href='https://github.com/emse-madd-gwu/maddTools/blob/master/R/logitProbs.R'><code>R/logitProbs.R</code></a></small>
+    <div class="hidden name"><code>logitProbs.Rd</code></div>
     </div>
 
-    <table class="ref-index">
+    <div class="ref-description">
+    <p>Returns a data frame of the predicted probabilities (with a confidence)
+interval) for a set of coefficients (or coefficient draws) and a data frame
+of alternatives.</p>
+    </div>
 
-    <colgroup>
-      
-      <col class="alias" />
-      <col class="title" />
-    </colgroup>
+    <pre class="usage"><span class='fu'>logitProbs</span><span class='op'>(</span><span class='va'>coefs</span>, <span class='va'>alts</span>, <span class='va'>altID</span>, <span class='va'>obsID</span>, ci <span class='op'>=</span> <span class='fl'>0.95</span><span class='op'>)</span></pre>
 
-    <tbody>
-      <tr>
-        <th colspan="2">
-          <h2 id="section-all-functions" class="hasAnchor"><a href="#section-all-functions" class="anchor"></a>All functions</h2>
-          <p class="section-desc"></p>
-        </th>
-      </tr>
-      
-      
-    </tbody><tbody>
-      
-      
-      <tr>
-        
-        <td>
-          <p><code><a href="ci.html">ci()</a></code> </p>
-        </td>
-        <td><p>Get a confidence interval for every column in a data frame</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="ggtornado.html">ggtornado()</a></code> </p>
-        </td>
-        <td><p>Create a "tornado" plot using ggplot2</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="logitProbs.html">logitProbs()</a></code> </p>
-        </td>
-        <td><p>Computes logit fraction given a set of coefficients and alternatives</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="mvrnorm.html">mvrnorm()</a></code> </p>
-        </td>
-        <td><p>Simulate from a Multivariate Normal Distribution</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="rep_df.html">rep_df()</a></code> </p>
-        </td>
-        <td><p>Repeats a data frame n times</p></td>
-      </tr>
-    </tbody>
+    <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
+    <table class="ref-arguments">
+    <colgroup><col class="name" /><col class="desc" /></colgroup>
+    <tr>
+      <th>coefs</th>
+      <td><p>A matrix of coefficients or draws of coefficients.</p></td>
+    </tr>
+    <tr>
+      <th>alts</th>
+      <td><p>A data frame of a set of alternatives for which to predict
+choices. Each row is an alternative and each column an attribute
+corresponding to parameter names in the estimated model.</p></td>
+    </tr>
+    <tr>
+      <th>altID</th>
+      <td><p>The name of the column that identifies each alternative
+in each set of alternatives.</p></td>
+    </tr>
+    <tr>
+      <th>obsID</th>
+      <td><p>The name of the column that identifies each set of
+alternatives. Required if predicting results for more than one set of
+alternatives. Defaults to <code>NULL</code> (for a single set of alternatives).</p></td>
+    </tr>
+    <tr>
+      <th>ci</th>
+      <td><p>The sensitivity of the computed confidence interval (CI).
+Defaults to <code>ci = 0.95</code>, reflecting a 95% CI.</p></td>
+    </tr>
     </table>
-  </div>
 
+
+  </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <nav id="toc" data-toggle="toc" class="sticky-top">
       <h2 data-toc-skip>Contents</h2>
