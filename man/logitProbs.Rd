@@ -4,21 +4,16 @@
 \alias{logitProbs}
 \title{Computes logit fraction given a set of coefficients and alternatives}
 \usage{
-logitProbs(coefs, alts, altID, obsID, ci = 0.95)
+logitProbs(coefs, newdata, obsID, ci = 0.95)
 }
 \arguments{
 \item{coefs}{A matrix of coefficients or draws of coefficients.}
 
-\item{alts}{A data frame of a set of alternatives for which to predict
-choices. Each row is an alternative and each column an attribute
-corresponding to parameter names in the estimated model.}
-
-\item{altID}{The name of the column that identifies each alternative
-in each set of alternatives.}
+\item{newdata}{A data frame of a set of alternatives for which to compute
+logit probabilities. Each row is an alternative.}
 
 \item{obsID}{The name of the column that identifies each set of
-alternatives. Required if predicting results for more than one set of
-alternatives. Defaults to \code{NULL} (for a single set of alternatives).}
+alternatives.}
 
 \item{ci}{The sensitivity of the computed confidence interval (CI).
 Defaults to \code{ci = 0.95}, reflecting a 95\% CI.}
