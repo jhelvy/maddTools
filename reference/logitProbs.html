@@ -124,7 +124,7 @@ interval) for a set of coefficients (or coefficient draws) and a data frame
 of alternatives.</p>
     </div>
 
-    <pre class="usage"><span class='fu'>logitProbs</span><span class='op'>(</span><span class='va'>coefs</span>, <span class='va'>newdata</span>, <span class='va'>obsID</span>, ci <span class='op'>=</span> <span class='fl'>0.95</span><span class='op'>)</span></pre>
+    <pre class="usage"><span class='fu'>logitProbs</span><span class='op'>(</span><span class='va'>coefs</span>, <span class='va'>newdata</span>, obsID <span class='op'>=</span> <span class='cn'>NULL</span>, ci <span class='op'>=</span> <span class='fl'>0.95</span><span class='op'>)</span></pre>
 
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
@@ -141,7 +141,8 @@ logit probabilities. Each row is an alternative.</p></td>
     <tr>
       <th>obsID</th>
       <td><p>The name of the column that identifies each set of
-alternatives.</p></td>
+alternatives. Defaults to <code>NULL</code>, in which case it assumes the newdata
+are all one choice scenario.</p></td>
     </tr>
     <tr>
       <th>ci</th>

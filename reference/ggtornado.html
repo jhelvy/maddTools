@@ -158,33 +158,34 @@ is set at the value of 'value'.</p></td>
 
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><div class='input'>
-<span class='co'># Create an example data frame of a sensitivity analysis - columns:</span>
-<span class='co'># 'var'    &lt;- The name of the variable being varied.</span>
-<span class='co'># 'level'  &lt;- 'high' or 'low' (relative to the baseline).</span>
-<span class='co'># 'value'  &lt;- The value of the variable being varied.</span>
-<span class='co'># 'result' &lt;- The result of the output value at the varied variable value.</span>
-<span class='va'>data</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/data.frame.html'>data.frame</a></span><span class='op'>(</span>
-    var    <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='st'>'price'</span>, <span class='st'>'price'</span>, <span class='st'>'fuelEconomy'</span>, <span class='st'>'fuelEconomy'</span>,
-               <span class='st'>'accelTime'</span>, <span class='st'>'accelTime'</span><span class='op'>)</span>,
-    level  <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/rep.html'>rep</a></span><span class='op'>(</span><span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='st'>'high'</span>, <span class='st'>'low'</span><span class='op'>)</span>, <span class='fl'>3</span><span class='op'>)</span>,
-    value  <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='fl'>10</span>, <span class='fl'>20</span>, <span class='fl'>25</span>, <span class='fl'>15</span>, <span class='fl'>10</span>, <span class='fl'>6</span><span class='op'>)</span>,
-    result <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='fl'>0.95</span>, <span class='fl'>0.15</span>, <span class='fl'>0.90</span>, <span class='fl'>0.60</span>, <span class='fl'>0.85</span>, <span class='fl'>0.75</span><span class='op'>)</span>
-<span class='op'>)</span>
-
-<span class='co'># Make a tornado plot of the sensitivity analysis results:</span>
-<span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://ggplot2.tidyverse.org'>ggplot2</a></span><span class='op'>)</span>
-
-<span class='fu'>ggtornado</span><span class='op'>(</span>
-    data <span class='op'>=</span> <span class='va'>data</span>,
-    baseline <span class='op'>=</span> <span class='fl'>0.8</span>, <span class='co'># Baseline result</span>
-    var    <span class='op'>=</span> <span class='st'>'var'</span>,
-    level  <span class='op'>=</span> <span class='st'>'level'</span>,
-    value  <span class='op'>=</span> <span class='st'>'value'</span>,
-    result <span class='op'>=</span> <span class='st'>'result'</span>
-<span class='op'>)</span>
-</div><div class='img'><img src='ggtornado-1.png' alt='' width='700' height='433' /></div><div class='input'>
-</div></pre>
+    <pre class="examples"><span class='r-in'></span>
+<span class='r-in'><span class='co'># Create an example data frame of a sensitivity analysis - columns:</span></span>
+<span class='r-in'><span class='co'># 'var'    &lt;- The name of the variable being varied.</span></span>
+<span class='r-in'><span class='co'># 'level'  &lt;- 'high' or 'low' (relative to the baseline).</span></span>
+<span class='r-in'><span class='co'># 'value'  &lt;- The value of the variable being varied.</span></span>
+<span class='r-in'><span class='co'># 'result' &lt;- The result of the output value at the varied variable value.</span></span>
+<span class='r-in'><span class='va'>data</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/data.frame.html'>data.frame</a></span><span class='op'>(</span></span>
+<span class='r-in'>    var    <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='st'>'price'</span>, <span class='st'>'price'</span>, <span class='st'>'fuelEconomy'</span>, <span class='st'>'fuelEconomy'</span>,</span>
+<span class='r-in'>               <span class='st'>'accelTime'</span>, <span class='st'>'accelTime'</span><span class='op'>)</span>,</span>
+<span class='r-in'>    level  <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/rep.html'>rep</a></span><span class='op'>(</span><span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='st'>'high'</span>, <span class='st'>'low'</span><span class='op'>)</span>, <span class='fl'>3</span><span class='op'>)</span>,</span>
+<span class='r-in'>    value  <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='fl'>10</span>, <span class='fl'>20</span>, <span class='fl'>25</span>, <span class='fl'>15</span>, <span class='fl'>10</span>, <span class='fl'>6</span><span class='op'>)</span>,</span>
+<span class='r-in'>    result <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='fl'>0.95</span>, <span class='fl'>0.15</span>, <span class='fl'>0.90</span>, <span class='fl'>0.60</span>, <span class='fl'>0.85</span>, <span class='fl'>0.75</span><span class='op'>)</span></span>
+<span class='r-in'><span class='op'>)</span></span>
+<span class='r-in'></span>
+<span class='r-in'><span class='co'># Make a tornado plot of the sensitivity analysis results:</span></span>
+<span class='r-in'><span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://ggplot2.tidyverse.org'>ggplot2</a></span><span class='op'>)</span></span>
+<span class='r-in'></span>
+<span class='r-in'><span class='fu'>ggtornado</span><span class='op'>(</span></span>
+<span class='r-in'>    data <span class='op'>=</span> <span class='va'>data</span>,</span>
+<span class='r-in'>    baseline <span class='op'>=</span> <span class='fl'>0.8</span>, <span class='co'># Baseline result</span></span>
+<span class='r-in'>    var    <span class='op'>=</span> <span class='st'>'var'</span>,</span>
+<span class='r-in'>    level  <span class='op'>=</span> <span class='st'>'level'</span>,</span>
+<span class='r-in'>    value  <span class='op'>=</span> <span class='st'>'value'</span>,</span>
+<span class='r-in'>    result <span class='op'>=</span> <span class='st'>'result'</span></span>
+<span class='r-in'><span class='op'>)</span></span>
+<span class='r-plt img'><img src='ggtornado-1.png' alt='' width='700' height='433' /></span>
+<span class='r-in'></span>
+</pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <nav id="toc" data-toggle="toc" class="sticky-top">
