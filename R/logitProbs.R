@@ -11,11 +11,16 @@
 #' @param newdata A data frame of a set of alternatives for which to compute
 #' logit probabilities. Each row is an alternative.
 #' @param obsID The name of the column that identifies each set of
-#' alternatives.
+#' alternatives. Defaults to `NULL`, in which case it assumes the newdata
+#' are all one choice scenario.
 #' @param ci The sensitivity of the computed confidence interval (CI).
 #' Defaults to `ci = 0.95`, reflecting a 95% CI.
 #' @export
-logitProbs <- function(coefs, newdata, obsID, ci = 0.95) {
+logitProbs <- function(coefs, newdata, obsID = NULL, ci = 0.95) {
+    if (is.null(obsID)) {
+        obsID <- "obsID"
+        newdata$obsID <- rep(1, nrow(newdata))
+    }
     obsID <- newdata[, obsID]
     recoded <- logitr::recodeData(newdata, colnames(coefs), NULL)
     expV <- exp(recoded$X %*% t(coefs))

@@ -4,7 +4,7 @@
 \alias{logitProbs}
 \title{Computes logit fraction given a set of coefficients and alternatives}
 \usage{
-logitProbs(coefs, newdata, obsID, ci = 0.95)
+logitProbs(coefs, newdata, obsID = NULL, ci = 0.95)
 }
 \arguments{
 \item{coefs}{A matrix of coefficients or draws of coefficients.}
@@ -13,7 +13,8 @@ logitProbs(coefs, newdata, obsID, ci = 0.95)
 logit probabilities. Each row is an alternative.}
 
 \item{obsID}{The name of the column that identifies each set of
-alternatives.}
+alternatives. Defaults to \code{NULL}, in which case it assumes the newdata
+are all one choice scenario.}
 
 \item{ci}{The sensitivity of the computed confidence interval (CI).
 Defaults to \code{ci = 0.95}, reflecting a 95\% CI.}
