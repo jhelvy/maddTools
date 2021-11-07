@@ -1,6 +1,6 @@
 Package: maddTools
 Title: Miscellaneous Functions For EMSE 6035
-Version: 0.0.2
+Version: 0.0.3
 Maintainer: John Helveston <john.helveston@gmail.com>
 Authors@R:
     person(given   = "John",
@@ -21,7 +21,6 @@ Suggests:
 Imports:
     ggplot2,
     logitr (>= 0.4.0),
-    MASS,
     rlang,
     stats
 URL: https://github.com/emse-madd-gwu/maddTools
