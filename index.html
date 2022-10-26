@@ -19,6 +19,8 @@
 <![endif]-->
 </head>
 <body data-spy="scroll" data-target="#toc">
+    
+
     <div class="container template-home">
       <header><div class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container">
@@ -31,7 +33,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="index.html">maddTools</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.0.3</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">0.0.3</span>
       </span>
     </div>
 
@@ -52,7 +54,7 @@
       </ul>
 <ul class="nav navbar-nav navbar-right">
 <li>
-  <a href="https://github.com/emse-madd-gwu/maddTools">
+  <a href="https://github.com/emse-madd-gwu/maddTools" class="external-link">
     <span class="fa fa-github"></span>
      
   </a>
@@ -69,32 +71,30 @@
 
       </header><div class="row">
   <div class="contents col-md-9">
-<div id="maddtools" class="section level1">
-<div class="page-header"><h1 class="hasAnchor">
-<a href="#maddtools" class="anchor"></a>{maddTools}</h1></div>
-<!-- badges: start -->
-<!-- badges: end -->
-<p>Miscellaneous functions for the GWU course <a href="https://madd.seas.gwu.edu/">EMSE 6035: Marketing Analytics for Design Decisions</a></p>
-<div id="installation" class="section level2">
-<h2 class="hasAnchor">
-<a href="#installation" class="anchor"></a>Installation</h2>
+<div class="section level1">
+<div class="page-header"><h1 id="maddtools">{maddTools}<a class="anchor" aria-label="anchor" href="#maddtools"></a>
+</h1></div>
+<!-- badges: start --><!-- badges: end --><p>Miscellaneous functions for the GWU course <a href="https://madd.seas.gwu.edu/" class="external-link">EMSE 6035: Marketing Analytics for Design Decisions</a></p>
+<div class="section level2">
+<h2 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a>
+</h2>
 <p>The package can be installed from GitHub:</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="co"># install.packages("remotes")</span>
-<span class="fu">remotes</span><span class="fu">::</span><span class="fu"><a href="https://remotes.r-lib.org/reference/install_github.html">install_github</a></span><span class="op">(</span><span class="st">"emse-madd-gwu/maddTools"</span><span class="op">)</span></code></pre></div>
+<code class="sourceCode R"><span><span class="co"># install.packages("remotes")</span></span>
+<span><span class="fu">remotes</span><span class="fu">::</span><span class="fu"><a href="https://remotes.r-lib.org/reference/install_github.html" class="external-link">install_github</a></span><span class="op">(</span><span class="st">"jhelvy/maddTools"</span><span class="op">)</span></span></code></pre></div>
 <p>Load the package with:</p>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/emse-madd-gwu/maddTools">maddTools</a></span><span class="op">)</span></code></pre></div>
+<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/emse-madd-gwu/maddTools" class="external-link">maddTools</a></span><span class="op">)</span></span></code></pre></div>
 </div>
-<div id="contents" class="section level2">
-<h2 class="hasAnchor">
-<a href="#contents" class="anchor"></a>Contents</h2>
+<div class="section level2">
+<h2 id="contents">Contents<a class="anchor" aria-label="anchor" href="#contents"></a>
+</h2>
 <p>This package contains the following functions:</p>
 <ul>
 <li>
 <code><a href="reference/ci.html">ci()</a></code>: Get confidence intervals for a vector of numbers or for every column in a data frame of numeric columns.</li>
 <li>
-<code><a href="reference/ggtornado.html">ggtornado()</a></code>: Creates a “tornado” plot using the <a href="https://ggplot2.tidyverse.org/">{ggplot2}</a> package.</li>
+<code><a href="reference/ggtornado.html">ggtornado()</a></code>: Creates a “tornado” plot using the <a href="https://ggplot2.tidyverse.org/" class="external-link">{ggplot2}</a> package.</li>
 <li>
 <code><a href="reference/logitProbs.html">logitProbs()</a></code>: Computes logit fraction given a set of coefficients and alternatives.</li>
 <li>
@@ -102,83 +102,89 @@
 </ul>
 <p>To view more details of any of the functions, run <code>?functionName()</code> in R, replacing ‘functionName’ with the name of the function.</p>
 </div>
-<div id="author-version-and-license-information" class="section level2">
-<h2 class="hasAnchor">
-<a href="#author-version-and-license-information" class="anchor"></a>Author, Version, and License Information</h2>
+<div class="section level2">
+<h2 id="author-version-and-license-information">Author, Version, and License Information<a class="anchor" aria-label="anchor" href="#author-version-and-license-information"></a>
+</h2>
 <ul>
-<li>Author: <em>John Paul Helveston</em> <a href="https://www.jhelvy.com/" class="uri">https://www.jhelvy.com/</a>
+<li>Author: <em>John Paul Helveston</em> <a href="https://www.jhelvy.com/" class="external-link uri">https://www.jhelvy.com/</a>
 </li>
 <li>Date First Written: <em>August, 25, 2021</em>
 </li>
-<li>License: <a href="https://github.com/emse-madd-gwu/maddTools/blob/master/LICENSE.md">MIT</a>
+<li>License: <a href="https://github.com/emse-madd-gwu/maddTools/blob/master/LICENSE.md" class="external-link">MIT</a>
 </li>
 </ul>
 </div>
-<div id="citation-information" class="section level2">
-<h2 class="hasAnchor">
-<a href="#citation-information" class="anchor"></a>Citation Information</h2>
+<div class="section level2">
+<h2 id="citation-information">Citation Information<a class="anchor" aria-label="anchor" href="#citation-information"></a>
+</h2>
 <p>If you use this package for in a publication, I would greatly appreciate it if you cited it - you can get the citation by typing <code>citation("maddTools")</code> into R:</p>
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/utils/citation.html">citation</a></span><span class="op">(</span><span class="st">"maddTools"</span><span class="op">)</span>
-<span class="co">#&gt; </span>
-<span class="co">#&gt; To cite maddTools in publications use:</span>
-<span class="co">#&gt; </span>
-<span class="co">#&gt;   John Paul Helveston (2021). maddTools: Tools For EMSE 6035 -</span>
-<span class="co">#&gt;   Marketing Analytics for Design Decisions.</span>
-<span class="co">#&gt; </span>
-<span class="co">#&gt; A BibTeX entry for LaTeX users is</span>
-<span class="co">#&gt; </span>
-<span class="co">#&gt;   @Manual{,</span>
-<span class="co">#&gt;     title = {maddTools: Tools For EMSE 6035 - Marketing Analytics for Design Decisions},</span>
-<span class="co">#&gt;     author = {John Paul Helveston},</span>
-<span class="co">#&gt;     year = {2021},</span>
-<span class="co">#&gt;     note = {R package version 0.0.3},</span>
-<span class="co">#&gt;     url = {http://madd.seas.gwu.edu/maddTools/},</span>
-<span class="co">#&gt;   }</span></code></pre></div>
+<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/citation.html" class="external-link">citation</a></span><span class="op">(</span><span class="st">"maddTools"</span><span class="op">)</span></span>
+<span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt; To cite maddTools in publications use:</span></span>
+<span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt;   John Paul Helveston (2021). maddTools: Tools For EMSE 6035 -</span></span>
+<span><span class="co">#&gt;   Marketing Analytics for Design Decisions.</span></span>
+<span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt; A BibTeX entry for LaTeX users is</span></span>
+<span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt;   @Manual{,</span></span>
+<span><span class="co">#&gt;     title = {maddTools: Tools For EMSE 6035 - Marketing Analytics for Design Decisions},</span></span>
+<span><span class="co">#&gt;     author = {John Paul Helveston},</span></span>
+<span><span class="co">#&gt;     year = {2021},</span></span>
+<span><span class="co">#&gt;     note = {R package version 0.0.3},</span></span>
+<span><span class="co">#&gt;     url = {http://madd.seas.gwu.edu/maddTools/},</span></span>
+<span><span class="co">#&gt;   }</span></span></code></pre></div>
 </div>
 </div>
   </div>
 
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <div class="links">
-<h2>Links</h2>
+<h2 data-toc-skip>Links</h2>
 <ul class="list-unstyled">
-<li>Browse source code at <br><a href="https://github.com/emse-madd-gwu/maddTools/">https://​github.com/​emse-madd-gwu/​maddTools/​</a>
-</li>
-<li>Report a bug at <br><a href="https://github.com/emse-madd-gwu/maddTools/issues">https://​github.com/​emse-madd-gwu/​maddTools/​issues</a>
-</li>
+<li><a href="https://github.com/emse-madd-gwu/maddTools/" class="external-link">Browse source code</a></li>
+<li><a href="https://github.com/emse-madd-gwu/maddTools/issues" class="external-link">Report a bug</a></li>
 </ul>
 </div>
+
 <div class="license">
-<h2>License</h2>
+<h2 data-toc-skip>License</h2>
 <ul class="list-unstyled">
 <li><a href="LICENSE.html">Full license</a></li>
-<li><small><a href="https://opensource.org/licenses/mit-license.php">MIT</a> + file <a href="LICENSE-text.html">LICENSE</a></small></li>
+<li><small><a href="https://opensource.org/licenses/mit-license.php" class="external-link">MIT</a> + file <a href="LICENSE-text.html">LICENSE</a></small></li>
 </ul>
 </div>
+
+
 <div class="citation">
-<h2>Citation</h2>
+<h2 data-toc-skip>Citation</h2>
 <ul class="list-unstyled">
-<li><a href="authors.html">Citing maddTools</a></li>
+<li><a href="authors.html#citation">Citing maddTools</a></li>
 </ul>
 </div>
+
 <div class="developers">
-<h2>Developers</h2>
+<h2 data-toc-skip>Developers</h2>
 <ul class="list-unstyled">
-<li>John Helveston <br><small class="roles"> Author, maintainer, copyright holder </small> <a href="https://orcid.org/0000-0002-2657-9191" target="orcid.widget" aria-label="ORCID"><span class="fab fa-orcid orcid" aria-hidden="true"></span></a> </li>
+<li>John Helveston <br><small class="roles"> Author, maintainer, copyright holder </small> <a href="https://orcid.org/0000-0002-2657-9191" target="orcid.widget" aria-label="ORCID" class="external-link"><span class="fab fa-orcid orcid" aria-hidden="true"></span></a> </li>
 </ul>
 </div>
+
+
 
   </div>
 </div>
 
 
       <footer><div class="copyright">
-  <p>Developed by John Helveston.</p>
+  <p></p>
+<p>Developed by John Helveston.</p>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.1.</p>
+  <p></p>
+<p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.6.</p>
 </div>
 
       </footer>
@@ -186,6 +192,8 @@
 
   
 
+
+  
 
   </body>
 </html>
