@@ -16,7 +16,7 @@ The package can be installed from GitHub:
 
 ``` r
 # install.packages("remotes")
-remotes::install_github("emse-madd-gwu/maddTools")
+remotes::install_github("jhelvy/maddTools")
 ```
 
 Load the package with:
